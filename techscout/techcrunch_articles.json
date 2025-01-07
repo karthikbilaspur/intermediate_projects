@@ -1,0 +1,12 @@
+[
+    {
+      "title": "Article Title",
+      "link": "https://techcrunch.com/article-link",
+      "description": "Article description"
+    },
+    {
+      "title": "Another Article",
+      "link": "https://techcrunch.com/another-article",
+      "description": "Another article description"
+    }
+  ]

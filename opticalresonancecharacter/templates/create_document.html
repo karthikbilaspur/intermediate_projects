@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Document from Extracted Text{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h2>Create Document from Extracted Text</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Create Document</button>
+      <a href="{% url 'history' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+{% endblock %}

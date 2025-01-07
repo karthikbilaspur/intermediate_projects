@@ -1,0 +1,21 @@
+Here are the requirements for the Book Recommendation System:
+requirements.txt
+Flask==2.0.2
+scikit-learn==1.0.2
+json5
+pandas
+numpy
+These packages provide the necessary functionality for the application:
+Core Dependencies
+Flask: Web framework for building the application backend.
+scikit-learn: Machine learning library for collaborative filtering and content-based filtering.
+Data Management
+json5: JSON parsing and serialization.
+pandas: Data manipulation and analysis.
+numpy: Numerical computations.
+To install these requirements:
+Open your terminal.
+Navigate to your project directory.
+Run pip install -r requirements.txt.
+Ensure you have Python 3.8 or later installed on your system.
+

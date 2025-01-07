@@ -1,0 +1,8 @@
+<h2>Upload History:</h2>
+<ul>
+    {% for image in images %}
+        <li>
+            <a href="{% url 'display_text' image.pk %}">{{ image.image }}</a>
+        </li>
+    {% endfor %}
+</ul>

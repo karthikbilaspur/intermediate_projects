@@ -1,0 +1,12 @@
+{
+    "entities": [
+      {
+        "label": "PERSON",
+        "pattern": "[Name]"
+      },
+      {
+        "label": "LOCATION",
+        "pattern": "[Location]"
+      }
+    ]
+  }

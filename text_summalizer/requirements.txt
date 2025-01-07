@@ -1,0 +1,27 @@
+Requirements File for News Summarizer Web Application
+Text
+Flask==2.3.2
+nltk==3.8.1
+gensim==4.3.1
+beautifulsoup4==4.12.0
+requests==2.30.0
+textstat==0.7.0
+scikit-learn==1.2.1
+vaderSentiment==3.3.2
+To generate this file automatically:
+Navigate to your project directory.
+Run pip freeze > requirements.txt.
+To install requirements from this file:
+Navigate to your project directory.
+Run pip install -r requirements.txt.
+Explanation
+This requirements.txt file specifies the dependencies required to run the News Summarizer web application:
+Flask: Web framework.
+NLTK: Natural language processing library.
+Gensim: Topic modeling and document similarity analysis library.
+BeautifulSoup: HTML and XML parsing library.
+Requests: HTTP request library.
+Textstat: Text readability metrics library.
+Scikit-learn: Machine learning library.
+VaderSentiment: Sentiment analysis tool.
+

@@ -1,0 +1,24 @@
+requirements.txt
+speechrecognition==3.8.1
+PyAudio==0.2.12
+pydub==0.25.1
+wave==0.0.2
+tk==0.1.0
+To generate the requirements.txt file automatically:
+Navigate to your project directory.
+Run pip freeze > requirements.txt.
+Note: Ensure you have the necessary permissions to install packages.
+Installation Commands
+Bash
+# Clone repository
+git clone https://github.com/your-username/speech-recognizer.git
+
+# Navigate to project directory
+cd speech-recognizer
+
+# Install requirements
+pip install -r requirements.txt
+
+# Run application
+python speech_recognizer.py
+

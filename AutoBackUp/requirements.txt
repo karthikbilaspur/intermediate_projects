@@ -1,0 +1,43 @@
+# Required libraries
+google-api-python-client==2.55.0
+google-auth-httplib2==0.1.0
+google-auth-oauthlib==0.5.2
+google-cloud-core==2.3.0
+google-cloud-storage==2.4.0
+dropbox==11.34.0
+onedrive-sdk==1.0.17
+mysql-connector-python==8.0.29
+psycopg2-binary==2.9.5
+flask==2.2.2
+pyAesCrypt==1.0.4
+zipfile==0.0.3
+logging==0.5.1.2
+schedule==1.1.0
+pycryptodome==3.17.0
+
+# Optional libraries
+paramiko==2.11.0  # for network share backup
+pywin32==305  # for Windows compatibility
+To install requirements:
+Create a new virtual environment (optional).
+Navigate to your project directory.
+Run pip install -r requirements.txt.
+Notes
+Ensure you have Python 3.8+ installed.
+Update requirements.txt as needed for your project.
+Consider using a virtual environment for dependency management.
+Dependency Explanation
+Google API Client Library: Interacts with Google Drive API.
+Dropbox SDK: Integrates with Dropbox API.
+OneDrive SDK: Connects to OneDrive API.
+MySQL Connector: Enables MySQL database backups.
+Psycopg2: Facilitates PostgreSQL database backups.
+Flask: Powers the web interface.
+PyAesCrypt: Provides AES encryption.
+Zipfile: Handles zip compression.
+Logging: Enhances logging capabilities.
+Schedule: Allows scheduling backups.
+PyCryptodome: Offers additional encryption algorithms.
+Paramiko: Supports network share backups (optional).
+PyWin32: Ensures Windows compatibility (optional).
+

@@ -1,0 +1,9 @@
+Django==4.1.7
+Pillow==9.2.0
+pytesseract==0.3.10
+tesseract-ocr
+pdf2image
+pdfkit
+fpdf
+django-crispy-forms
+django-filter

@@ -1,0 +1,11 @@
+Requirements
+Flask
+Flask-Login
+Scapy
+Nmap
+Matplotlib
+Pandas
+Requests
+Flask-Mail
+Scikit-Learn
+

@@ -1,0 +1,30 @@
+# Email Automation Project Dependencies
+
+# Built-in Libraries (no installation required)
+# smtplib
+# email
+# ssl
+
+# External Libraries
+Jinja2==3.1.2
+python-dotenv==0.20.0
+
+# Development Dependencies
+unittest==2.1
+pytest==7.2.2
+
+# Optional Dependencies
+sentry-sdk==1.11.0  # Error monitoring
+loggly-python-handler==1.3.1  # Log analysis
+Installation
+To install dependencies, run:
+Bash
+pip install -r requirements.txt
+Dependency Explanation
+Jinja2: Templating engine for dynamic email content.
+python-dotenv: Loads environment variables from .env files.
+unittest: Built-in Python testing framework.
+pytest: Alternative testing framework.
+sentry-sdk (optional): Error monitoring and tracking.
+loggly-python-handler (optional): Log analysis and monitoring.
+

@@ -1,0 +1,104 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation Styles */
+  
+  nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Image Upload Styles */
+  
+  .upload-image {
+    margin-top: 20px;
+  }
+  
+  .upload-image input[type="file"] {
+    padding: 10px;
+  }
+  
+  /* Extracted Text Styles */
+  
+  .extracted-text {
+    margin-top: 20px;
+  }
+  
+  .extracted-text textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+  }
+  
+  /* Button Styles */
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive Design */
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      margin: 20px auto;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      margin: 10px auto;
+    }
+    nav li {
+      display: block;
+    }
+  }

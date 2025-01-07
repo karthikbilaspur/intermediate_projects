@@ -1,0 +1,34 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey"],
+            "responses": ["Hi there!", "Hello!", "Hey!"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": ["See you later!", "Goodbye!", "Bye!"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "Appreciate it"],
+            "responses": ["You're welcome!", "No problem!", "Anytime!"]
+        },
+        {
+            "tag": "product_inquiry",
+            "patterns": ["What's the price of...", "How much does... cost?", "Do you have...?"],
+            "responses": ["The price of {} is {}", "We have {} available for {}", "I'm checking availability of {}"]
+        },
+        {
+            "tag": "follow-up",
+            "patterns": ["What's next?", "Can you help me with...", "I need..."],
+            "responses": ["Of course! What's on your mind?", "How can I assist you?", "I'm here to help!"]
+        },
+        {
+            "tag": "clarification",
+            "patterns": ["Can you explain...", "I don't understand...", "Can you clarify..."],
+            "responses": ["I'd be happy to explain!", "Let me clarify that for you!", "Certainly!"]
+        }
+    ]
+}

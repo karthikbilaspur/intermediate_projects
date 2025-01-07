@@ -1,0 +1,27 @@
+# Requirements for 2048 Game
+
+# Core Requirements
+python>=3.8
+tkinter
+
+# Optional Requirements (for potential enhancements)
+json
+random
+
+# Development Requirements (for testing and debugging)
+pytest
+This file specifies:
+Core Requirements
+Python 3.8 or higher
+Tkinter library (for GUI)
+Optional Requirements
+JSON library (for game history storage)
+Random library (for tile generation)
+Development Requirements
+Pytest library (for unit testing and debugging)
+To install requirements:
+Create a virtual environment (e.g., python -m venv venv).
+Activate the virtual environment (e.g., source venv/bin/activate on Linux/macOS or venv\Scripts\activate on Windows).
+Run pip install -r requirements.txt.
+Ensure your Python environment meets these requirements for seamless gameplay.
+

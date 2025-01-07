@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Summary</h1>
+    <p>{{ summary }}</p>
+    <h2>Sentiment Analysis</h2>
+    <p>Positive: {{ sentiment['pos'] }}</p>
+    <p>Negative: {{ sentiment['neg'] }}</p>
+    <p>Neutral: {{ sentiment['neu'] }}</p>
+    <p>Compound: {{ sentiment['compound'] }}</p>
+</body>
+</html>

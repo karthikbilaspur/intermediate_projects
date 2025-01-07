@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>News Summarizer</h1>
+    <form action="" method="post">
+        <input type="url" name="url" placeholder="Enter news article URL">
+        <select name="method">
+            <option value="sentence_scoring">Sentence Scoring</option>
+            <option value="gensim">Gensim</option>
+            <option value="tfidf">TF-IDF</option>
+            <option value="cosine_similarity">Cosine Similarity</option>
+        </select>
+        <button type="submit">Summarize</button>
+    </form>
+    <p><a href="{{ url_for('about') }}">About</a></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="board">
+        {% for i in range(8) %}
+            <div class="row">
+                {% for j in range(8) %}
+                    <div id="{{ i }}-{{ j }}" class="cell" data-row="{{ i }}" data-col="{{ j }}">
+                        {% if game_state.board[i][j] %}
+                            <img src="{{ url_for('get_piece_image', piece=game_state.board[i][j]) }}" />
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    <button id="undo-btn" class="undo-btn">Undo</button>
+    <button id="redo-btn" class="redo-btn">Redo</button>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

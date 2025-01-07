@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Reminder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ _('Umbrella Reminder') }}</h1>
+    <form id="email-form">
+        <input type="email" id="email" placeholder="{{ _('Email') }}">
+        <input type="password" id="password" placeholder="{{ _('Password') }}">
+        <select id="language">
+            <option value="en">{{ _('English') }}</option>
+            <option value="es">{{ _('Spanish') }}</option>
+            <option value="fr">{{ _('French') }}</option>
+        </select>
+        <button id="send-email-btn">{{ _('Send Umbrella Reminder Email') }}</button>
+    </form>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

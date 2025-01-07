@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('scan') }}">Scan</a></li>
+            <li><a href="{{ url_for('report') }}">Report</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+    <h1>Dashboard</h1>
+    <form action="{{ url_for('scan') }}" method="post">
+        <label>IP Range:</label>
+        <input type="text" name="ip-range" required>
+        <br>
+        <label>Scan Type:</label>
+        <select name="scan-type">
+            <option value="all">All</option>
+            <option value="wifi">Wi-Fi</option>
+            <option value="bluetooth">Bluetooth</option>
+        </select>
+        <br>
+        <button type="submit">Scan</button>
+    </form>
+</body>
+</html>

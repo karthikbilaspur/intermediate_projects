@@ -1,0 +1,17 @@
+{
+    "backup_dir": "/path/to/backup/directory",
+    "sources": [
+        {
+            "name": "Documents",
+            "src": "/path/to/documents"
+        },
+        {
+            "name": "Pictures",
+            "src": "/path/to/pictures"
+        }
+    ],
+    "compress": true,
+    "encrypt": true,
+    "retention": 30,
+    "notification": true
+}

@@ -1,0 +1,23 @@
+# Flask Framework
+Flask==2.2.2
+
+# Database ORM
+Flask-SQLAlchemy==2.5.1
+
+# Form Handling and Validation
+Flask-WTF==1.0.1
+
+# Password Hashing
+Flask-Bcrypt==1.0.1
+
+# User Session Management
+Flask-Login==0.6.1
+
+# Performance Optimization
+Flask-Caching==0.15.1
+
+# Template Engine
+Jinja2==3.1.2
+
+# Werkzeug Utilities
+Werkzeug==2.2.2

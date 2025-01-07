@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vulnerabilities</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Vulnerabilities</h1>
+    <h2>NVD Vulnerabilities</h2>
+    <pre>
+        {{ nvd_vulnerabilities | tojson }}
+    </pre>
+    <h2>CVE Vulnerabilities</h2>
+    <pre>
+        {{ cve_vulnerabilities | tojson }}
+    </pre>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>

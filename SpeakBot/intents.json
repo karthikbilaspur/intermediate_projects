@@ -1,0 +1,12 @@
+{
+  "intents": [
+    {
+      "pattern": "hello",
+      "response": "Hi! How are you?"
+    },
+    {
+      "pattern": "how are you",
+      "response": "I'm good, thanks!"
+    }
+  ]
+}

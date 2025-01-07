@@ -1,0 +1,7 @@
+equirements.txt
+pygame==2.0.1
+To generate the requirements.txt file automatically:
+Navigate to your project directory.
+Run pip freeze > requirements.txt.
+Update README.md with your GitHub repository link, name and website.
+

@@ -1,0 +1,10 @@
+{
+    "1": {
+      "name": "John Doe",
+      "preferences": ["sports", "music"]
+    },
+    "2": {
+      "name": "Jane Doe",
+      "preferences": ["movies", "books"]
+    }
+  }

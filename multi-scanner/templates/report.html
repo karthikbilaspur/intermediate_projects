@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Report</h1>
+    <form action="{{ url_for('generate_report') }}" method="post">
+        <label>Report Type:</label>
+        <select name="report-type">
+            <option value="pdf">PDF</option>
+            <option value="csv">CSV</option>
+        </select>
+        <br>
+        <button type="submit">Generate Report</button>
+    </form>
+</body>
+</html>

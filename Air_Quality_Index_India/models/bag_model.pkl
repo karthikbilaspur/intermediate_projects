@@ -1,0 +1,22 @@
+import pickle
+from sklearn.ensemble import BaggingRegressor
+
+class BaggingModel:
+    def __init__(self):
+        self.model = BaggingRegressor(n_estimators=100, random_state=42)
+
+    def train(self, X_train, y_train):
+        self.model.fit(X_train, y_train)
+
+    def predict(self, X_test):
+        return self.model.predict(X_test)
+
+# Create an instance of the BaggingModel class
+bag_model = BaggingModel()
+
+# Train the model
+bag_model.train(X_train, y_train)
+
+# Save the trained model to a pickle file
+with open('models/bag_model.pkl', 'wb') as f:
+    pickle.dump(bag_model, f)

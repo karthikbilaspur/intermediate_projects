@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="game-board">
+        {% for row in board %}
+            {% for tile in row %}
+                <div class="tile">{{ tile }}</div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <button id="up-btn">Up</button>
+    <button id="down-btn">Down</button>
+    <button id="left-btn">Left</button>
+    <button id="right-btn">Right</button>
+    <button id="undo-btn">Undo</button>
+    <button id="hint-btn">Hint</button>
+    <div class="score-display">
+        <p>Score: {{ score }}</p>
+    </div>
+    <div class="high-score-display">
+        <p>High Score: {{ highScore }}</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

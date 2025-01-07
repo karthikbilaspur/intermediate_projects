@@ -1,0 +1,31 @@
+id,listing_id,comments,rating
+1,1,"Great location!",5
+2,1,"Clean and cozy.",4
+3,2,"Friendly host.",5
+4,3,"Small room.",3
+5,4,"Excellent amenities.",5
+6,5,"Comfortable bed.",4
+7,6,"Quiet neighborhood.",4
+8,7,"Fast Wi-Fi.",5
+9,8,"Clean bathroom.",4
+10,9,"Convenient location.",5
+11,10,"Friendly neighborhood.",4
+12,11,"Cozy atmosphere.",4
+13,12,"Helpful host.",5
+14,13,"Small kitchen.",3
+15,14,"Great view!",5
+16,15,"Clean floors.",4
+17,16,"Comfortable sofa.",4
+18,17,"Fast check-in.",5
+19,18,"Quiet room.",4
+20,19,"Excellent service.",5
+21,20,"Clean sheets.",4
+22,21,"Friendly community.",4
+23,22,"Convenient parking.",5
+24,23,"Cozy balcony.",4
+25,24,"Helpful instructions.",5
+26,25,"Clean towels.",4
+27,26,"Great neighborhood.",4
+28,27,"Fast communication.",5
+29,28,"Comfortable mattress.",4
+30,29,"Excellent stay!",5

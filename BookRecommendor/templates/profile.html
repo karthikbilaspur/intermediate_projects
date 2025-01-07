@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>User Profile</h1>
+    <h2>Reading History</h2>
+    <ul>
+    {% for book in user['reading_history'] %}
+        <li>{{ books[str(book['book_id'])]['title'] }} (Rating: {{ book.rating }})</li>
+    {% endfor %}
+    </ul>
+    <form action="/profile" method="post">
+        <label for="book_id">Book ID:</label>
+        <input type="number" id="book_id" name="book_id"><br><br>
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating"><br><br>
+        <input type="submit" value="Add to Reading History">
+    </form>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

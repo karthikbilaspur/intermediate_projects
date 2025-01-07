@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.cell img {
+    width: 30px;
+    height: 30px;
+}
+
+.undo-btn, .redo-btn {
+    width: 100px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.undo-btn:hover, .redo-btn:hover {
+    background-color: #3e8e41;
+}
+
+.valid-move {
+    background-color: #ccc;
+}

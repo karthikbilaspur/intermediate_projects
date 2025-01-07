@@ -1,0 +1,31 @@
+# Requirements for Predicting House Prices in Bangalore
+
+# Data manipulation and analysis
+pandas==1.5.2
+numpy==1.23.5
+
+# Machine learning
+scikit-learn==1.2.0
+scipy==1.9.3
+
+# Data visualization
+matplotlib==3.7.1
+seaborn==0.12.1
+
+# Model interpretation
+shap==0.41.0
+
+# Neural networks
+scikit-learn==1.2.0  # For MLPRegressor
+
+# Miscellaneous
+python==3.10.8
+To generate this file automatically:
+Activate your Python environment.
+Install required packages.
+Run pip freeze > requirements.txt.
+To install requirements from this file:
+Activate your Python environment.
+Run pip install -r requirements.txt.
+Ensure your Python environment matches the version specified.
+
