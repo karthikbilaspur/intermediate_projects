@@ -79,13 +79,11 @@ def register():
 def protected():
     return "Welcome, " + current_user.username
 
-
 @app.route("/logout")
 @login_required
 def logout():
     logout_user()
     return redirect(url_for("index"))
-
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -107,8 +105,6 @@ def register():
         db.session.commit()
         return redirect(url_for("login"))
     return render_template("register.html", form=form)
-
-
 
 if __name__ == "__main__":
     db.create_all()
