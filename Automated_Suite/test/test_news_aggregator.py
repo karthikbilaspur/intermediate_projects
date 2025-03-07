@@ -12,7 +12,6 @@ class TestNewsAggregator(unittest.TestCase):
         feeds = ["https://news.google.com/rss/search?q=technology"]
         news = get_news(feeds)
         self.assertIsNotNone(news)
-
     @patch('feedparser.parse')
     def test_get_news_failure(self, mock_parse):
         mock_parse.side_effect = Exception
@@ -24,6 +23,5 @@ class TestNewsAggregator(unittest.TestCase):
         feeds = ["invalid_feed"]
         news = get_news(feeds)
         self.assertIsNone(news)
-
 if __name__ == "__main__":
     unittest.main()

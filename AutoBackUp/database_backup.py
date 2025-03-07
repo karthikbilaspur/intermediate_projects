@@ -1,6 +1,5 @@
 import mysql.connector
 import psycopg2
-
 def backup_mysql(db_host, db_user, db_password, db_name):
     cnx = mysql.connector.connect(
         user=db_user,
@@ -14,8 +13,6 @@ def backup_mysql(db_host, db_user, db_password, db_name):
     for table in tables:
         cursor.execute(f"SELECT * FROM {table[0]}")
         rows = cursor.fetchall()
-        # Save rows to backup file
-
 def backup_postgresql(db_host, db_user, db_password, db_name):
     conn = psycopg2.connect(
         dbname=db_name,
@@ -29,4 +26,3 @@ def backup_postgresql(db_host, db_user, db_password, db_name):
     for table in tables:
         cur.execute(f"SELECT * FROM {table[0]}")
         rows = cur.fetchall()
-        # Save rows to backup file
