@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Crypto Interface</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="POST">
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message"><br><br>
+            <label for="key">Key:</label>
+            <input type="text" id="key" name="key"><br><br>
+            <input type="submit" name="submit" value="Encrypt">
+            <input type="submit" name="submit" value="Decrypt"><br><br>
+            <label for="ciphertext">Ciphertext:</label>
+            <input type="text" id="ciphertext" name="ciphertext"><br><br>
+            <label for="plaintext">Plaintext:</label>
+            <input type="text" id="plaintext" name="plaintext"><br><br>
+        </form>
+        {% if ciphertext %}
+            <p>Ciphertext: {{ ciphertext }}</p>
+        {% endif %}
+        {% if plaintext %}
+            <p>Plaintext: {{ plaintext }}</p>
+        {% endif %}
+    </main>
+</body>
+</html>

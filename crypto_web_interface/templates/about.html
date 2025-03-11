@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>This is a simple crypto interface built with Flask and the cryptography library.</p>
+        <p>It allows users to encrypt and decrypt messages using the AES algorithm.</p>
+    </main>
+</body>
+</html>
