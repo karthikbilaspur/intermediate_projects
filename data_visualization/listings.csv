@@ -28,4 +28,3 @@ id,host_id,room_type,price,occupancy_rate,latitude,longitude
 27,102,Shared Room,38,0.48,40.7295,-74.025
 28,103,Entire Home,155,0.97,40.7081,-74.003
 29,101,Private Room,58,0.68,40.7133,-74.016
-30,104,Entire Home,135,0.92,40.7103,-74.006

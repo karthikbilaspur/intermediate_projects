@@ -1,34 +1,44 @@
-Airbnb NYC Listings Analysis
-Project Overview
-This project analyzes Airbnb listings in New York City, providing insights into price dynamics, room type distribution, host performance and sentiment analysis.
-Features
-Geospatial Analysis: Interactive neighborhood maps.
-Price Dynamics: Time-series plots for price fluctuations.
-Room Type Insights: Occupancy rates, prices and review scores.
-Host Performance Evaluation: Host ratings, response times and listing counts.
-Sentiment Analysis: Review sentiment and topic modeling.
-Recommendation System: Personalized listing suggestions.
-Predictive Modeling: Forecasting listing prices.
-Technologies Used
-Python 3.x
-Pandas for data manipulation
-Matplotlib and Seaborn for visualization
-Folium for interactive maps
-Surprise library for recommendation system
-Scikit-learn for predictive modeling
-Dataset
-Inside Airbnb NYC listings dataset (listings.csv)
-Installation
-Clone repository.
-Install requirements (pip install -r requirements.txt).
-Run analysis (python analysis.py).
-Contribution Guidelines
-Fork repository.
-Implement changes.
-Submit pull request.
-License
-MIT License
-Acknowledgments
-Inside Airbnb for dataset.
-Contact
- | 
+# Airbnb Data Analysis
+
+This project analyzes data from Airbnb listings in New York City. It includes data visualization, sentiment analysis, recommendation systems, and predictive modeling.
+
+## Features
+
+* Data visualization using Matplotlib, Seaborn, and Folium
+* Sentiment analysis using NLTK and VADER
+* Recommendation systems using Surprise and SVD
+* Predictive modeling using Scikit-learn and Linear Regression
+* Random Forest Regressor for comparison
+
+## Requirements
+
+* Python 3.6+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Folium
+* NLTK
+* Surprise
+* Scikit-learn
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/your-username/airbnb-data-analysis.git`
+2. Install the requirements: `pip install -r requirements.txt`
+3. Run the analysis: `python analysis.py`
+
+## Usage
+
+1. Open the `analysis.py` file to view the code.
+2. Run the code to generate the visualizations and analysis.
+3. View the results in the `visualizations` folder.
+
+pandas
+numpy
+matplotlib
+seaborn
+folium
+nltk
+surprise
+scikit-learn
